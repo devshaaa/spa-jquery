@@ -1,32 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple jQuery SPA</title>
-</head>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-    .app-nav-btn-active {
-        background-color: #858585;
-        color: white;
-    }
-</style>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaxziee Portfolio</title>
+    <link rel="icon" href="https://i.ibb.co/zRsTj3p/Frame-1-37.png">
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+</head> 
+
 <body>
-    <nav>
-        <div class="w3-bar w3-light-grey">
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
-            <a href="#about" class="w3-bar-item w3-button">About Us</a>
+
+    <!-------------------------- Header Area -------------------------->
+    <header class="header-area">
+        <div class="container">
+            <div class="header">
+               
+                <a href="" class="logo">
+                    <img src="files/signaturecropped.png" alt="" class="signature">
+                    <i class="fa fa-bolt"></i>
+                </a>
+                   
+                <ul class="navbar">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    
+                </ul>
+                
+                <div class="menu_icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+
+            </div>
+        </div> 
+    </header>
+ 
+    <!-------------------------- Home Page -------------------------->
+    <div class="FirstElement" id="home">
+        <div class="profile-photo">
+            <img src="shaxziee.jpg" alt="" class="img">
         </div>
-    </nav>
-    <div id="content"></div>
+    </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./js/router.js"></script>
+        <div class="profile-text">
+            <h5>Hi I'm </h5><br>
+            <h1>Shaa</h1><br>
+            <p>Welcome to my portfolio website!</p>
+
+            <div class="social">
+                <a href="mailto:shnjnmrgll@gmail.com"><i class="fa fa-envelope"></i></a>
+                <a href="https://github.com/devshaaa"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/iamshaaxyz" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+        <!-------------------------- About Section -------------------------->
+    <section class="about-area" id="about">
+        <div class="container">
+            <div class="about">
+                
+                <div class="about-content">
+                    <h4>About Me</h4>
+                    <ul>
+                      <li>Hi, I am Shaina Jean M. Heras. Currently studying at Northern Bukidnon State College as an IT student.</li>
+                    </ul>
+                </div>                      
+                <div class="about-skills">
+                    <ul>
+                        <li>Name: Shaa</li>
+                        <li>Age: 23 years old</li>     
+                        <li>From: San Miguel MFB</li>
+                        <li>Email: shnjnmrgll@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-------------------------- JS -------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
     
-    <script>
-        $('nav a').on('click', function(event) {
-            $('nav a').removeClass('app-nav-btn-active');
-            $(this).addClass('app-nav-btn-active');
-        });
-    </script>
+    <!-------------------------- Footer section -------------------------->
+   <footer class="footer">
+    <small class="message">Love is what makes the ride worthwhile.</small>
+    <small class="copyright">&copy; Copyright 2023. All rights reserved.</small>
+   </footer>
+
 </body>
 </html>
